@@ -16,6 +16,7 @@ On the righthand Elixir equivalent
 # Incoming features
 - Lambda expressions `{ _ * 2 }`
     - No more `Enum.map fn a -> a * 2 end`. Now its time for `Enum.map {_ * 2}`
+    - Imagine a world where `|> (&(&1 * &2)).()` becomes `|> {_ * _}.()`
 # Intalation
 
 Install Scalixir globally with
@@ -71,3 +72,4 @@ defmodule MyModule {
 }
 
 ```
+
