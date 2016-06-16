@@ -12,4 +12,19 @@ On the righthand Elixir equivalent
 
 
 # Intalation
-  
+
+Install Scalixir globally with
+
+`mix archive.install https://github.com/wende/scalixir/releases/download/v0.1/scalixir-0.0.1.ez`
+
+Then add it yo your project by adding these two lines to your `Mix.exs` file
+
+```elixir
+def project do
+    [app: :my_app,
+     ...
+     compilers: [:scalixir, :yecc, :leex, :erlang, :elixir, :app],
+     elixirc_paths: ["lib", ".sex"]
+    ]
+  end
+```
