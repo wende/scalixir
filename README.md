@@ -23,7 +23,7 @@ Install Scalixir globally with
 
 Then add it yo your project by adding these two lines to your `Mix.exs` file
 
-```elixir
+```scala
 def project do
     [app: :my_app,
      ...
@@ -34,3 +34,35 @@ def project do
 ```
 
 Now you can create `*.sex` files anywhere in your project and have fun with Scalixir
+
+# Example file
+
+```elixir
+defmodule MyModule{
+  def somefunction(a, b \\ 10)
+  def somefunction(a, b){
+    case File.read("somefile"){
+      (:ok, content) -> content
+      _ -> :not_ok
+    }
+  }
+  def somefunction(a, 5){
+    Enum.map(a, fn b -> b * 5 end)
+  }
+
+  defmacro something(a, b){
+    IO.puts "hey"
+  }
+
+  defmacrop deffun(){
+    quote{
+      def yo(){
+        :yo
+      }
+    }
+  }
+
+  defp two() = 2
+}
+
+```
