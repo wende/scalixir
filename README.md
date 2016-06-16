@@ -17,7 +17,8 @@ On the righthand Elixir equivalent
 - Lambda expressions `{ _ * 2 }`
     - No more `Enum.map fn a -> a * 2 end`. Now its time for `Enum.map {_ * 2}`
     - Imagine a world where `|> (&(&1 * &2)).()` becomes `|> {_ * _}.()`
-# Intalation
+
+# Instalation
 
 Install Scalixir globally with
 
