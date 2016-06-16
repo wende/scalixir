@@ -28,3 +28,5 @@ def project do
     ]
   end
 ```
+
+Now you can create `*.sex` files anywhere in your project and have fun with Scalixir
