@@ -9,8 +9,12 @@ On the righthand Elixir equivalent
 
 
 # Features
+- `{` and `}` instead of `do` and `end` - No more tedious block separators!
+- `(` and `)` instead of `{` and `}` for tuples. Just because. And also for easier implementation of the feature above
 
-
+# Incoming features
+- Lambda expressions `{ _ * 2 }`
+    - No more `Enum.map fn a -> a * 2 end`. Now its time for `Enum.map {_ * 2}`
 # Intalation
 
 Install Scalixir globally with
