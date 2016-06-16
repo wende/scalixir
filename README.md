@@ -1,20 +1,15 @@
-# Erlixir
+# Scalixir
 
-**TODO: Add description**
+Scala syntax in Elixir!
 
-## Installation
+![image](https://s32.postimg.org/3ru7vw2ad/Screen_Shot_2016_06_16_at_17_04_47.png)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+On the left hand side Scalixir
+On the righthand Elixir equivalent
 
-  1. Add erlixir to your list of dependencies in `mix.exs`:
 
-        def deps do
-          [{:erlixir, "~> 0.0.1"}]
-        end
+# Features
 
-  2. Ensure erlixir is started before your application:
 
-        def application do
-          [applications: [:erlixir]]
-        end
-
+# Intalation
+  
