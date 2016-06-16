@@ -11,6 +11,7 @@ On the righthand Elixir equivalent
 # Features
 - `{` and `}` instead of `do` and `end` - No more tedious block separators!
 - `(` and `)` instead of `{` and `}` for tuples. Just because. And also for easier implementation of the feature above
+- Single line defs declarations with `=`
 
 # Incoming features
 - Lambda expressions `{ _ * 2 }`
@@ -37,16 +38,19 @@ Now you can create `*.sex` files anywhere in your project and have fun with Scal
 
 # Example file
 
-```elixir
-defmodule MyModule{
+```ruby
+# Brackets instead of do/end blocks
+defmodule MyModule {
   def somefunction(a, b \\ 10)
   def somefunction(a, b){
     case File.read("somefile"){
+      # Parenthesis for tuples
       (:ok, content) -> content
       _ -> :not_ok
     }
   }
   def somefunction(a, 5){
+    # Nothing yet here. But it will look like Enum.map a, { _ * 5 }
     Enum.map(a, fn b -> b * 5 end)
   }
 
@@ -62,6 +66,7 @@ defmodule MyModule{
     }
   }
 
+  # Single line defs declarations with `=`
   defp two() = 2
 }
 
