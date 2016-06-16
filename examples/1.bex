@@ -1,0 +1,27 @@
+
+defmodule Module {
+  def somefunction(a, b \\ 10)
+  def somefunction(a, b){
+    case b {
+      5 -> :ok
+      _ -> :not_ok
+    }
+  }
+  def somefunction(a, b){
+    Enum.map(a, {&1 * 5})
+  }
+  defmacro something(a, b) {
+    IO.puts "hey"
+  }
+
+  defmacrop deffun(){
+    quote{
+      def yo(){
+        :yo
+      }
+    }
+  }
+
+  defp two() = 2
+}
+
